@@ -107,7 +107,7 @@ export function PresentationMode() {
       if (next === undefined || i > 40) break;
       await glide(next, travelDuration(next - window.scrollY));
       if (!alive()) return;
-      const isBottom = next >= stops[stops.length - 1];
+      const isBottom = next >= (stops[stops.length - 1] ?? next);
       await wait(isBottom ? BOTTOM_WAIT_MS : SECTION_PAUSE_MS);
       if (!alive()) return;
       if (isBottom) break;

@@ -131,7 +131,7 @@
   font-weight: 400;
   letter-spacing: 0.38em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--eyebrow, var(--gold));
 }
 
 @utility text-gold-gradient {
@@ -162,6 +162,7 @@
   --border: oklch(0.13 0.004 70 / 15%);
   --input: oklch(0.13 0.004 70 / 25%);
   --muted-foreground: oklch(0.42 0.02 70);
+  --eyebrow: oklch(0.5 0.07 75);
 }
 
 /* Buttons */

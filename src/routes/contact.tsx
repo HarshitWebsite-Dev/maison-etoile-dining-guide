@@ -54,16 +54,16 @@ function ContactPage() {
                 </span>
                 <div>
                   <p className="eyebrow">{it.label}</p>
-                  {it.lines.map((l) =>
-                    it.href ? (
-                      <a key={l} href={it.href} className="link-underline mt-3 block font-display text-2xl hover:text-gold">
-                        {l}
-                      </a>
-                    ) : (
-                      <p key={l} className="mt-3 font-display text-2xl leading-snug first-of-type:mt-3 [&+p]:mt-0">
-                        {l}
-                      </p>
-                    ),
+                  {it.href ? (
+                    <a href={it.href} className="link-underline mt-3 inline-block break-all font-display text-2xl hover:text-gold">
+                      {it.lines[0]}
+                    </a>
+                  ) : (
+                    <p className="mt-3 font-display text-2xl leading-snug">
+                      {it.lines.map((l) => (
+                        <span key={l} className="block">{l}</span>
+                      ))}
+                    </p>
                   )}
                 </div>
               </Reveal>

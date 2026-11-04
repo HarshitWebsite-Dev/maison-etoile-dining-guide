@@ -249,6 +249,29 @@
   }
 }
 
+/* Presentation Mode floating control */
+@utility presentation-pill {
+  background: oklch(0.13 0.004 70 / 72%);
+  color: var(--ivory);
+  border: 1px solid oklch(0.79 0.085 82 / 45%);
+  box-shadow: 0 12px 30px -14px oklch(0 0 0 / 70%);
+  -webkit-backdrop-filter: blur(12px);
+  -webkit-tap-highlight-color: transparent;
+  &:hover {
+    border-color: var(--gold);
+    color: var(--gold-soft);
+    box-shadow: var(--shadow-gold);
+  }
+}
+@utility presentation-pill-active {
+  background: oklch(0.96 0.018 88 / 92%);
+  color: var(--ink);
+  border-color: var(--gold);
+  &:hover {
+    color: var(--ink);
+  }
+}
+
 /* Scroll reveal */
 @utility reveal {
   opacity: 0;

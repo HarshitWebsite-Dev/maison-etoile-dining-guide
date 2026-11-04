@@ -3,8 +3,8 @@ import { menu } from "@/lib/restaurant";
 import { cn } from "@/lib/utils";
 
 export function MenuBoard() {
-  const [active, setActive] = useState(menu[0].id);
-  const course = menu.find((c) => c.id === active) ?? menu[0];
+  const [active, setActive] = useState("entrees");
+  const course = menu.find((c) => c.id === active) ?? menu[0]!;
 
   return (
     <div>

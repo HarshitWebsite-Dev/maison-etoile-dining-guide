@@ -49,7 +49,7 @@ function Home() {
             <span className="h-px w-12 origin-left bg-gold animate-line" />
             <p className="eyebrow">Haute Cuisine · Paris VIII</p>
           </div>
-          <h1 className="mt-8 font-display text-[3.6rem] leading-[0.88] animate-rise [animation-delay:200ms] sm:text-8xl lg:text-[10rem]">
+          <h1 className="mt-8 font-display text-[4.6rem] leading-[0.88] animate-rise [animation-delay:200ms] sm:text-8xl lg:text-[10rem]">
             Maison
             <br />
             <span className="italic text-gold-gradient">Étoile</span>
@@ -88,7 +88,7 @@ function Home() {
                 className="aspect-[4/5] w-full object-cover transition-transform duration-[2000ms] ease-luxe hover:scale-105"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 hidden h-40 w-40 border border-ink/30 md:block" />
+            <div className="absolute -bottom-6 -right-6 -z-10 hidden h-40 w-40 border border-ink/30 md:block" />
           </Reveal>
           <div className="md:col-span-6 md:col-start-7">
             <Reveal>

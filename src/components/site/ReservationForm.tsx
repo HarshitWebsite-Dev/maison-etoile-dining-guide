@@ -117,7 +117,7 @@ export function ReservationForm() {
   );
 }
 
-function Field({ label: l, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function Field({ label: l, error, children }: { label: string; error?: string | undefined; children: React.ReactNode }) {
   return (
     <label className="block">
       <span className={label}>{l}</span>
